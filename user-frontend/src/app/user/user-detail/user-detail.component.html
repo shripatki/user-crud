@@ -1,0 +1,57 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title text-center">View User</h5>
+    <form [formGroup]="userForm" >
+      <div class="form-group">
+        <label for="exampleInputFirstName">First Name</label>
+        <input
+          type="text"
+          formControlName="firstName"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"
+          id="exampleInputFirstName"
+          placeholder="First Name"
+          disabled
+        />
+
+      </div>
+      <div class="form-group">
+        <label for="exampleInputLastName">Last Name</label>
+
+        <input
+          type="text"
+          id="exampleInputLastName"
+          placeholder="Last Name"
+          formControlName="lastName"
+          class="form-control"
+          disabled
+        />
+
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input
+          type="text"
+          formControlName="email"
+          placeholder="email"
+          class="form-control"
+          disabled
+        />
+
+      </div>
+      <div class="form-group">
+        <label>Mobile Number</label>
+        <input
+          type="text"
+          formControlName="mobileNumber"
+          placeholder="mobile number"
+          class="form-control"
+          disabled
+        />
+
+      </div>
+
+
+    </form>
+  </div>
+</div>
